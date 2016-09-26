@@ -1,0 +1,40 @@
+﻿@model PostGetModel.Models.Pessoa
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<form action="home/lista" method="post">
+    <fieldset>
+        <legend>Pessoa</legend>
+        <div>
+            <label for="PessoaID">Código</label>
+
+        </div>
+
+        <div>
+            <input type="number" value="@Model.PessoaID" id="PessoaID" name="PessoaID" />
+        </div>
+
+        <div>
+            <label for="Nome">Nome</label>
+
+        </div>
+
+        <div>
+            <input type="text" value="@Model.Nome" id="Nome" name="Nome" />
+        </div>
+        <div>
+            <label for="Twitter">Twitter</label>
+
+        </div>
+
+        <div>
+            <input type="text" value="@Model.Twitter" id="Twitter" name="Twitter" />
+        </div>
+        <div>
+            <input type="submit" value="Enviar" />
+        </div>
+    </fieldset>
+</form>
